@@ -16,26 +16,30 @@ video#bgVideo {
     min-height: 25%;
     z-index: -100;    
     background-size: cover;
-    }
+    pointer-events: none;
+}
 
 
-.cont{
+/* .cont{
     padding: 1%;
     margin: auto;
     width: 40%;
     height: 1000px;
     background-color: #A07134;
-    /* background-image: url('https://files.catbox.moe/3suxyf.png'); */
+    background-image: url('https://files.catbox.moe/3suxyf.png');
     border: 1px solid darkgray;
     border-radius: 30px;
     -moz-box-shadow: 0 0 25px #fff;
     -webkit-box-shadow: 0 0 25px #fff;
     box-shadow: 0px 0px 25px #fff;
 }
+ */
 
 
-
-.container {  display: grid;
+.container {  
+    width: 60%;
+    height: 1000px;
+    display: grid;
     grid-template-columns: 0.7fr 1.6fr 0.7fr;
     grid-template-rows: 1.5fr 0.1fr 1.5fr 1.3fr 1.3fr 1.9fr 0.1fr;
     gap: 1% 1%;
@@ -48,20 +52,26 @@ video#bgVideo {
         "nav updates extra"
         "extra2 extra3 extra3"
         "footer footer footer";
-        border-width: 30px; 
-        border-style: solid; 
-        border-image: url("../images/sannish_border.png") 30 fill round; 
-        height: 925px;
-        margin: auto;
-        padding: 1%;    
+    border-width: 30px; 
+    border-style: solid; 
+    border-image: url("../images/sannish_border.png") 30 fill round;
+    border-radius: 30px;
+
+    -moz-box-shadow: 0 0 25px #fff;
+    -webkit-box-shadow: 0 0 25px #fff;
+    box-shadow: 0px 0px 25px #fff;
+    height: 925px;
+    margin: auto;
+    padding: 1%;    
+    
 }
 
 .header { 
     grid-area: header; 
-    background-image: url('https://files.catbox.moe/sd7fyy.gif');
+    background-image: url('../images/a.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid darkgray;
+    border: 0px solid darkgray;
     border-radius: 15px;
 }
 
@@ -71,7 +81,10 @@ video#bgVideo {
     text-decoration: none;
     transition: ease-in-out 0.3s;
     font-size: 3vw;
-    filter: drop-shadow(1px 1px 0 rgb(202, 134, 160)) drop-shadow(-1px 1px 0 rgb(202, 134, 160)) drop-shadow(0 -1px 0 rgb(202, 134, 160)) drop-shadow(1px 0 rgb(202, 134, 160));
+    filter: drop-shadow(1px 1px 0 #5F8B58)
+         drop-shadow(-1px 1px 0 #5F8B58) 
+         drop-shadow(0 -1px 0 #5F8B58) 
+         drop-shadow(1px 0 #5F8B58);
     margin-top: 14%;
     margin-left: 3%;
 }
@@ -84,10 +97,19 @@ video#bgVideo {
     letter-spacing: 5px;
 }
 
+audio{
+    float: right;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+    display: block;
+    border-radius: 20px;
+}
+
 .topscroll { 
     grid-area: topscroll; 
-    background-image: url('https://files.catbox.moe/mghfce.gif');
-    border: 1px solid darkgray;
+    /* background-image: url('https://files.catbox.moe/mghfce.gif'); */
+    border: 0px solid darkgray;
     border-radius: 15px;
 }
 
@@ -109,13 +131,16 @@ video#bgVideo {
 }
 
 .nav h1{
-    background-image: url('https://files.catbox.moe/khmhpt.gif');
+    background-image: url('');
     font-size: 1vw;
     text-align: center;
     animation: jerky 1s infinite;
     margin: 0;
     margin-top: 1%;
-    filter: drop-shadow(1px 1px 0 rgb(122, 122, 122)) drop-shadow(-1px 1px 0 rgb(122, 122, 122)) drop-shadow(0 -1px 0 rgb(122, 122, 122)) drop-shadow(1px 0 rgb(122, 122, 122));
+    filter: drop-shadow(1px 1px 0 #5F8B58)
+         drop-shadow(-1px 1px 0 #5F8B58) 
+         drop-shadow(0 -1px 0 #5F8B58) 
+         drop-shadow(1px 0 #5F8B58);
 }
 
 .nav span{
@@ -123,17 +148,25 @@ video#bgVideo {
     filter: drop-shadow(1px 1px 0 rgb(122, 122, 122)) drop-shadow(-1px 1px 0 rgb(122, 122, 122)) drop-shadow(0 -1px 0 rgb(122, 122, 122)) drop-shadow(1px 0 rgb(122, 122, 122));
 }
 
+ul {
+    padding-inline-start: 20px;
+}
+
 ul li{
-    list-style-image: url('https://files.catbox.moe/zd5h9u.gif');
+    list-style-image: url('../images/bullet_green.gif');
 }
 
 a{
-    color: #FFDFEC;
+    color: #4B536A;
     font-weight: bold;
     text-decoration: none;
     transition: ease-in-out 0.3s;
     font-size: 1vw;
-    filter: drop-shadow(1px 1px 0 rgb(202, 134, 160)) drop-shadow(-1px 1px 0 rgb(202, 134, 160)) drop-shadow(0 -1px 0 rgb(202, 134, 160)) drop-shadow(1px 0 rgb(202, 134, 160));
+    filter: 
+    drop-shadow(1px 1px 0 #D9D9E3) 
+    drop-shadow(-1px 1px 0 #D9D9E3) 
+    drop-shadow(0 -1px 0 #D9D9E3) 
+    drop-shadow(1px 0 #D9D9E3);
 }
 
 a:hover{
