@@ -290,9 +290,9 @@ h1{
 
 .footer { 
     grid-area: footer; 
-    border-width:7px;
-    border-style:solid;
-    border-image: url("https://files.catbox.moe/zfk7ik.gif") 7 fill round;
+    /* border-width:7px; */
+    /* border-style:solid; */
+    /* border-image: url("https://files.catbox.moe/zfk7ik.gif") 7 fill round; */
 }
 
 .footer marquee span{
