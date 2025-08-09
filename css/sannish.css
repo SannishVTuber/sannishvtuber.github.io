@@ -154,9 +154,6 @@ ul {
 
 ul li{
     list-style-image: url('../images/bullet_green.gif');
-}
-
-a{
     color: #4B536A;
     font-weight: bold;
     text-decoration: none;
@@ -167,6 +164,10 @@ a{
     drop-shadow(-1px 1px 0 #D9D9E3) 
     drop-shadow(0 -1px 0 #D9D9E3) 
     drop-shadow(1px 0 #D9D9E3);
+}
+
+a{
+    transition: ease-in-out 0.3s;
 }
 
 a:hover{
