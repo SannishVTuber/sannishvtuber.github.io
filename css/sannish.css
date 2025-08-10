@@ -46,7 +46,7 @@ video#bgVideo {
     grid-template-areas:
         "header header header"
         "topscroll topscroll topscroll"
-        "nav main todo"
+        "nav main profile"
         "nav updates updates"
         "nav updates updates"
         "nav extra3 extra3"
@@ -80,7 +80,7 @@ video#bgVideo {
     font-weight: bold;
     text-decoration: none;
     transition: ease-in-out 0.3s;
-    font-size: 3vw;
+    font-size: 4vw;
     filter: drop-shadow(1px 1px 0 #5F8B58)
          drop-shadow(-1px 1px 0 #5F8B58) 
          drop-shadow(0 -1px 0 #5F8B58) 
@@ -240,18 +240,19 @@ h1{
     scrollbar-width: none;
 }
 
-.todo { 
-    grid-area: todo; 
+.profile { 
+    grid-area: profile; 
     padding: 1%;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    border: 1px solid darkgrey;
-    border-radius: 15px;
-    background-image: url('https://files.catbox.moe/1mmmh1.gif');
+    /* border: 1px solid darkgrey; */
+    /* border-radius: 15px; */
+    /* background-image: url('https://files.catbox.moe/1mmmh1.gif'); */
     overflow: auto;
+    background: transparent;
 }
 
-.extra { 
+/* .extra { 
     grid-area: extra; 
     padding: 1%;
     -ms-overflow-style: none;
@@ -260,13 +261,13 @@ h1{
     border-style: solid; 
     border-image: url("https://files.catbox.moe/kgeylk.gif") 7 fill round; 
     overflow: auto;
-}
+} */
 
- .todo h1, .extra h1{
+ .profile h1, .extra h1{
   font-size: 1vw;
 }
 
-.extra2 { 
+/* .extra2 { 
     grid-area: extra2; 
     padding: 1%;
     -ms-overflow-style: none;
@@ -275,7 +276,7 @@ h1{
     border-style: solid; 
     border-image: url("https://files.catbox.moe/kgeylk.gif") 7 fill round;
     overflow: auto;
-}
+} */
 
 .extra3 { 
     grid-area: extra3; 
@@ -316,7 +317,7 @@ h1{
   transform: rotate(-5deg);
 }
 
-.todo .extra h1{
+.profile .extra h1{
     font-size: 1vw;
 }
 
@@ -333,7 +334,7 @@ h1{
     } */
 
     .container {  
-        width: 95%;
+        width: 85%;
         display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 0.1fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
@@ -342,7 +343,7 @@ h1{
   grid-template-areas:
     "header header header"
     "topscroll topscroll topscroll"
-    "nav main todo"
+    "nav main profile"
     "nav updates updates"
     "nav updates updates"
     "nav extra3 extra3"
@@ -355,8 +356,8 @@ h1{
 }
 
 .title{
-    font-size: 10vw;
-    margin-top: 24%;
+    font-size: 7vw;
+    margin-top: 15%;
 }
 
 .topscroll marquee span{
@@ -375,30 +376,32 @@ h1{
 }
 
 .nav span{
-    font-size: 5vw;
-}
-
-ul{
-    padding-left: 0;
-}
-
-a{
     font-size: 4vw;
 }
+
+.nav li{
+    padding-left: 0;
+    font-size: 2vw;
+}
+
+/* a{
+    font-size: 3vw;
+} */
+
 
 h1{
-    font-size: 7vw;
-}
-
-.main, .updates, .button, .extra, .extra2, .extra3, .todo { 
     font-size: 4vw;
 }
 
-.todo ul{
+.main, .updates, .button, .extra, .extra2, .extra3, .profile { 
+    font-size: 3vw;
+}
+
+.profile ul{
     padding-left: 15%;
 }
 
- .todo h1, .extra h1{
+ .profile h1, .extra h1{
   font-size: 4vw;
 }
 }
