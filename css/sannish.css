@@ -47,10 +47,12 @@ video#bgVideo {
     grid-template-areas:
         "header header header"
         "topscroll topscroll topscroll"
-        "nav main button"
         "nav main todo"
-        "nav updates extra"
-        "extra2 extra3 extra3"
+        "nav updates updates"
+        "nav updates updates"
+        "nav extra3 extra3"
+        "nav extra3 extra3"
+
         "footer footer footer";
     border-width: 30px; 
     border-style: solid; 
