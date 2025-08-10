@@ -326,13 +326,15 @@ h1{
         display: none;
     }
 
-    .cont{
+    /* .cont{
         margin: auto;
         width: 95%;
         height: auto;
-    }
+    } */
 
-    .container {  display: grid;
+    .container {  
+        width: 95%;
+        display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 0.1fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
   gap: 5px 5px;
