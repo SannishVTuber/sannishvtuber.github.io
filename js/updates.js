@@ -1,0 +1,27 @@
+
+var url = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sannish.bsky.social&limit=10&filter=posts_no_replies";
+var handle = 'sannish.bsky.social'
+
+function add_post(post) {
+    feedList.innerHTML += "<ul>" + 
+        "<img src=" + post.author.avatar + " width = 35></img>" +
+        " <a href = 'https://bsky.app/profile/sannish.bsky.social'>" + post.author.displayName + "</a> - " +
+        post.indexedAt + "<p>" +
+        post.record.text.replace(/\n/g, '<br>')+ " </ul>";
+}
+
+fetch(url)
+.then(res => res.json())
+.then(out => {
+    // console.log('Checkout this JSON! ', out);
+    out.feed.forEach(function(post)
+    {
+        // console.log('Look at this post ', post.post);
+        if (post.post.author.handle == handle)
+        {
+            add_post(post.post);
+        }
+    });
+}
+)
+.catch(err => console.log(err));
