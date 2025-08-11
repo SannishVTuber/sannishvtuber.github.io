@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+
+        var total_images = 24;
+        var baseURL = window.location.href.split('/').slice(0, -2).join('/');
+
+        function make_image(x)
+        {
+            return '<img src=\"' + baseURL + '/images/outfits/sannish_' + x + '.png\"' +
+            'height=125px><img>';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        
+            let gallery = document.getElementById("gallery");
+            for (let x = 1; x < total_images; x++) {
+                gallery.innerHTML += make_image(x);
+            }
+        
+        });
+        </script>
+</head>
+<body>
+
+<div id="gallery"></div>
+
+</body>
+</html>
