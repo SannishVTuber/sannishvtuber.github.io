@@ -46,11 +46,11 @@ video#bgVideo {
     grid-template-areas:
         "header header header"
         "topscroll topscroll topscroll"
-        "nav main profile"
+        "nav main main"
         "nav updates updates"
         "nav updates updates"
-        "nav extra3 extra3"
-        "nav extra3 extra3"
+        "nav gallery gallery"
+        "nav gallery gallery"
         "footer footer footer";
     border-width: 30px; 
     border-style: solid; 
@@ -214,7 +214,7 @@ h1{
     overflow: auto;
 }
 
-.updates, .button, .extra, .extra2, .extra3 p{
+.updates, .button, .gallery p{
     text-align: center;
 }
 
@@ -240,46 +240,8 @@ h1{
     scrollbar-width: none;
 }
 
-.profile { 
-    grid-area: profile; 
-    padding: 1%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    /* border: 1px solid darkgrey; */
-    /* border-radius: 15px; */
-    /* background-image: url('https://files.catbox.moe/1mmmh1.gif'); */
-    overflow: auto;
-    background: transparent;
-}
-
-/* .extra { 
-    grid-area: extra; 
-    padding: 1%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    border-width: 7px; 
-    border-style: solid; 
-    border-image: url("https://files.catbox.moe/kgeylk.gif") 7 fill round; 
-    overflow: auto;
-} */
-
- .profile h1, .extra h1{
-  font-size: 1vw;
-}
-
-/* .extra2 { 
-    grid-area: extra2; 
-    padding: 1%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    border-width: 7px; 
-    border-style: solid; 
-    border-image: url("https://files.catbox.moe/kgeylk.gif") 7 fill round;
-    overflow: auto;
-} */
-
-.extra3 { 
-    grid-area: extra3; 
+.gallery { 
+    grid-area: gallery; 
     padding: 1%;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -317,21 +279,11 @@ h1{
   transform: rotate(-5deg);
 }
 
-.profile .extra h1{
-    font-size: 1vw;
-}
-
 @media only screen and (max-width: 640px) {
 
     #doll{
         display: none;
     }
-
-    /* .cont{
-        margin: auto;
-        width: 95%;
-        height: auto;
-    } */
 
     .container {  
         width: 85%;
@@ -343,11 +295,11 @@ h1{
   grid-template-areas:
     "header header header"
     "topscroll topscroll topscroll"
-    "nav main profile"
+    "nav main main"
     "nav updates updates"
     "nav updates updates"
-    "nav extra3 extra3"
-    "nav extra3 extra3"
+    "nav gallery gallery"
+    "nav gallery gallery"
     "footer footer footer";
 }
 
@@ -384,24 +336,13 @@ h1{
     font-size: 2vw;
 }
 
-/* a{
-    font-size: 3vw;
-} */
-
 
 h1{
     font-size: 4vw;
 }
 
-.main, .updates, .button, .extra, .extra2, .extra3, .profile { 
+.main, .updates, .button, .gallery { 
     font-size: 3vw;
 }
 
-.profile ul{
-    padding-left: 15%;
-}
-
- .profile h1, .extra h1{
-  font-size: 4vw;
-}
 }
