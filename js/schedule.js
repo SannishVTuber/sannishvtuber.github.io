@@ -1,5 +1,5 @@
 
-var url = "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=sannish.bsky.social";
+var url = "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=sannish.net";
 
 // var pinned = "";
 
@@ -11,7 +11,7 @@ function make_url(uri)
 function make_html(post)
 {
 
-    post_url = "https://bsky.app/profile/sannish.bsky.social/post/" + post.uri.split("/app.bsky.feed.post/")[1];
+    post_url = "https://bsky.app/profile/sannish.net/post/" + post.uri.split("/app.bsky.feed.post/")[1];
     schedule.innerHTML += '<a href=\"' + post_url + '\">' + 
         '<img width=100% src=\"' + post.embed.images[0].thumb+ '\"</img>' +
         '</a>';

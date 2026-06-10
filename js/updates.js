@@ -1,13 +1,13 @@
 
-var url = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sannish.bsky.social&limit=10&filter=posts_no_replies";
-var handle = 'sannish.bsky.social'
+var url = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sannish.net&limit=10&filter=posts_no_replies";
+var handle = 'sannish.net'
 
 function add_post(post) {
     const postDate = new Date(post.indexedAt);
 
     feedList.innerHTML += "<ul>" + 
         "<img src=" + post.author.avatar + " width = 35></img>" +
-        " <a href = 'https://bsky.app/profile/sannish.bsky.social'>" + post.author.displayName + "</a> - " +
+        " <a href = 'https://bsky.app/profile/sannish.net'>" + post.author.displayName + "</a> - " +
         postDate.toLocaleString() + "<p>" +
         post.record.text.replace(/\n/g, '<br>')+ " </ul>";
 }
